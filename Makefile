@@ -50,6 +50,16 @@ update-bundler: # Update Bundler dependencies
 	bundle config path vendor/bundle
 	bundle update --jobs 4 --retry 3
 
+.PHONY: update-pods
+update-pods: # Update Podfile.lock
+	bundle exec pod update
+	$(MAKE) generate-xcodeproj
+
+.PHONY: update-dependencies
+update-dependencies: # Update Podfile.lock
+	$(MAKE) update-bundler
+	$(MAKE) update-pods
+
 .PHONY: install-mint
 install-mint: # Install Mint dependencies
 	mint bootstrap --overwrite y
