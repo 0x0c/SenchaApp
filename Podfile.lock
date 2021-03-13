@@ -1,0 +1,32 @@
+PODS:
+  - R.swift (5.3.1):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SFSafeSymbols (2.1.1)
+  - SwiftFormat/CLI (0.47.10)
+  - SwiftLint (0.42.0)
+
+DEPENDENCIES:
+  - R.swift
+  - SFSafeSymbols
+  - SwiftFormat/CLI
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - R.swift
+    - R.swift.Library
+    - SFSafeSymbols
+    - SwiftFormat
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SFSafeSymbols: a59c8be7723dc03e4b73069de3f879368dd2835a
+  SwiftFormat: b847ac37506435242af1a2e3b34b1fb31a4d3e6c
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+
+PODFILE CHECKSUM: 6fabd1f2328849ea564cbfc087d5f226cb975e71
+
+COCOAPODS: 1.10.1
